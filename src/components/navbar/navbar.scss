@@ -1,8 +1,22 @@
+@use "../../responsive.scss" as responsive;
+
 nav {
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    a {
+        transition: all 0.5s ease;
+
+        @include responsive.sm {
+            display: none;
+        }
+
+        &:hover {
+            scale: 1.05;
+        }
+    }
 
     .left {
         flex: 3;
@@ -21,6 +35,16 @@ nav {
         img {
             width: 28px;
         }
+
+        span {
+            @include responsive.md {
+                display: none;
+            }
+
+            @include responsive.sm {
+                display: initial;
+            }
+        }
     }
 
     .right {
@@ -31,6 +55,10 @@ nav {
         background-color: #fcf5f3;
         height: 100%;
 
+        @include responsive.md {
+            background-color: transparent;
+        }
+
         a {
             padding: 12px 24px;
             margin: 20px;
@@ -38,6 +66,47 @@ nav {
 
         .register {
             background-color: #fece51;
+        }
+
+        .menuIcon {
+            display: none;
+            z-index: 9999; // Is used to show the menu icon on top of other elements
+
+            img {
+                width: 36px;
+                height: 36px;
+                cursor: pointer;
+            }
+
+            @include responsive.sm {
+                display: inline;
+            }
+        }
+
+        .menu {
+            position: absolute;
+            top: 0;
+            right: -50%;
+            background-color: black;
+            color: white;
+            height: 100vh;
+            width: 50%;
+            transition: all 1s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: large;
+
+            &.active {
+                right: 0;
+            }
+
+            @include responsive.sm {
+                a {
+                    display: initial;
+                }
+            }
         }
     }
 }
