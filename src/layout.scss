@@ -1,7 +1,7 @@
-@import "./responsive.scss";
+@use "./responsive.scss" as responsive;
 
 .layout {
-    background-color: rebeccapurple;
+    // background-color: rebeccapurple;
     height: 100vh;
     max-width: 1360px;
     margin-left: auto;
@@ -9,18 +9,18 @@
     padding-left: 20px;
     padding-right: 20px;
 
-    @include lg {
-        background-color: green;
+    @include responsive.lg {
+        // background-color: green;
         max-width: 1280px;
     }
 
-    @include md {
-        background-color: blue;
+    @include responsive.md {
+        // background-color: blue;
         max-width: 768px;
     }
 
-    @include sm {
-        background-color: red;
+    @include responsive.sm {
+        // background-color: red;
         max-width: 640px;
     }
 }
