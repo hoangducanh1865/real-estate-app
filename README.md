@@ -43,11 +43,11 @@ Follow these steps to get the project running on your local machine for developm
 5.  **View the Website**
     Once the server starts (you'll usually see a message in the terminal indicating it's running), open your web browser.
     
-    *   **To view the main website (homepage):** Navigate to the base URL provided. This is often:
-        `http://localhost:5173` or `http://localhost:3000` 
+    *   **To view the main website (homepage):** Navigate to the base URL provided. This is often:  
+        `http://localhost:5173` or `http://localhost:3000`  
         *(Check the terminal output for the exact address if different)*
 
-    *   **To view the property list page:** Add `/list` to the base URL:
+    *   **To view the property list page:** Add `/list` to the base URL:  
         `http://localhost:5173/list`
 
 You should now see the real estate website running locally in your browser!
