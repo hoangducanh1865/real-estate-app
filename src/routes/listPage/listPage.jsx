@@ -1,3 +1,4 @@
+import Map from '../../components/map/Map'
 import { listData } from '../../lib/dummydata'
 import './listPage.scss'
 import Filter from '../../components/filter/Filter'
@@ -15,7 +16,9 @@ function ListPage() {
                 ))}
             </div>
         </div>
-        <div className="mapContainer">Map</div>
+        <div className="mapContainer">
+            <Map items={data} /> {/* Pass the data to the Map component */}
+        </div>
     </div>
 }
 

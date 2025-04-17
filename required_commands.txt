@@ -1,2 +1,4 @@
 npm i 
 npm i react-router-dom
+npm install leaflet
+npm install react-leaflet@4.2.1   # May cause version conflict since the command in the tutorial is: npm install react-leaflet
