@@ -2,3 +2,17 @@ npm i
 npm i react-router-dom
 npm install leaflet
 npm install react-leaflet@4.2.1   # May cause version conflict since the command in the tutorial is: npm install react-leaflet
+
+
+
+
+
+// Use "fcs" for short.
+// Check this GitHub repository for more detail: https://github.com/safak/snippets
+/*
+Do the following steps to be able to use the shortcuts:
+- Step 1: Copy the content in file javascriptreact.json in the repo
+- Step 2: Use Ctrl + Shift + P to open the command palette, type "Snippets" and select "Preferences: Configure User Snippets"
+- Step 3: Select "javascriptreact.json" and paste the content you copied in step 1
+- Step 4: Save the file
+*/
